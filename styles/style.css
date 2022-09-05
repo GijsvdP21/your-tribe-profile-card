@@ -78,7 +78,28 @@ button svg:nth-of-type(2) {
   transition-delay: 0ms;
 }
 
-img {
+.Baby {
+  width:10em;
+  border-radius:10em;
+  border:5px solid #fff;
+  box-shadow:0 0 2px 2px rgba(0,0,0,.2);
+  position:relative;
+  top:2rem;
+  transition:.25s .15s;
+}
+
+.Geslaagd {
+  width:10em;
+  border-radius:10em;
+  border:5px solid #fff;
+  box-shadow:0 0 2px 2px rgba(0,0,0,.2);
+  position:relative;
+  top:2rem;
+  transition:.25s .15s;
+  float: left;
+}
+
+.Pasfoto {
   width:10em;
   border-radius:10em;
   border:5px solid #fff;
