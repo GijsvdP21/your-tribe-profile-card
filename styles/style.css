@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  height:100vh;
+  height:40em;
   font-family: open sans;
   display:flex;
   justify-content:center;
@@ -16,19 +16,26 @@ body {
 }
 
 article {
-  width:50vw;
-  max-width: 25em;
-  min-width:20em;
+  background:linear-gradient(
+    to bottom,
+    red 0%,
+    red 33.3%,
+    white 33.3%,
+    white 66.7%,
+    blue 66.7%,
+    blue 100% );
+  width: 450px;
+  max-width: 450px;
+  min-width: 100px;
   display:flex;
   flex-direction:column;
   align-items:center;
   justify-content:flex-end;
-  background: rgb(0,239,255);
-  background: linear-gradient(0deg, rgba(0,239,255,1) 40%, #4e54c8 100%);
   box-shadow:0 0 20px 20px rgba(0,0,0,.1);
   border-radius:1rem;
   position: relative;
   transition:.25s;
+  height: 35em;
 }
 
 header {
@@ -41,72 +48,63 @@ header {
 }
 
 h1 {
-  margin:3rem 0 1rem;
+  margin:1.1rem 0 1rem;
   color: rgb(255, 153, 0);
-  font-weight: 800;
+  font-weight: 1000;
+  text-decoration: underline;
+  transition: .5s;
+  position: absolute;
+  top: 0em;
 }
 
-button {
-  border:none;
-  position: absolute;
-  right:1rem;
-  top:1rem;
-  width:2.5rem;
-  height:2.5rem;
-  transform: scale(.8);
-  background: rgba(0,239,255,1);
-  border-radius:50%;
-  padding:.25rem;
-  transition:.25s;
-}
-button:focus {
-  outline:none;
-  background:#202592;
-}
-button:focus svg {
-  stroke: rgba(0,239,255,1);
-}
-
-svg {
-  stroke: #4e54c8;
-  position: absolute;
-  top:calc(1.25rem - 12px);
-  left:calc(1.25rem - 12px);
-  transition-delay: .25s;
-}
-button svg:nth-of-type(2) {
-  opacity:0;
-  transition-delay: 0ms;
+h1:hover {
+  transform: rotate(360deg);
 }
 
 .Baby {
   width:10em;
-  border-radius:10em;
-  border:5px solid #fff;
+  border-radius:1em;
+  border: 3px solid gold;
   box-shadow:0 0 2px 2px rgba(0,0,0,.2);
   position:relative;
-  top:0rem;
+  top: 500px;
   transition:.25s .15s;
 }
 
 .Geslaagd {
-  width:10em;
-  border-radius:10em;
-  border:5px solid #fff;
+  
+  width:6em;
+  border-radius:1em;
+  border:3px solid gold;
   box-shadow:0 0 2px 2px rgba(0,0,0,.2);
-  position:relative;
-  top:2rem;
+  position: relative;
+  bottom: -140px;
   transition:.25s .15s;
+  left: -162.5px;
 }
 
 .Pasfoto {
-  width:10em;
-  border-radius:10em;
-  border:5px solid #fff;
+  width:6em;
+  border-radius:1em;
+  border:3px solid gold;
   box-shadow:0 0 2px 2px rgba(0,0,0,.2);
   position:relative;
-  top:2rem;
+  top: -2px;
   transition:.25s .15s;
+}
+
+.nk {
+  width:10em;
+  border-radius:1em;
+  border:3px solid gold;
+  box-shadow:0 0 2px 2px rgba(0,0,0,.2);
+  position:relative;
+  top:10rem;
+  transition:.25s .15s;
+}
+
+img {
+  padding: 1px solid gold;
 }
 
 dl {
@@ -146,43 +144,53 @@ dd:nth-of-type(2){
   transform: translateY(1rem);
 }
 
-p { 
-  margin:0
-}
-
 article > p {
-  padding:3rem 2rem;
+  margin-block: 0rem;
+  display: flexbox;
+  padding:.2rem 0rem;
   margin-top: 0;
-  background:rgba(255,255,255, 0.5);
+  background: orange;
   text-align:center;
-  border-radius: 0 0 1rem 1rem;
-  width:100%;
+  border-radius: 1em;
+  width:125px;
 }
 
-/* expand content */
-body.expand {
-  font-size:1.15em;
+.geboorte {
+  position: relative;
+  top: 303px;
 }
 
-body.expand article {
-  width:60vw;
-  max-width: 60vw;
+.basisschool {
+  position: relative;
+  left: -163px;
+  top: 288px;
 }
 
-body.expand button svg:first-of-type {
-  opacity:0;
-  transition-delay: 0ms;
+.verhuizing {
+  position: relative;
+  right: -163px;
+  top: 277px;
 }
 
-body.expand button svg:nth-of-type(2) {
-  opacity:1;
-  transition-delay:.25s;
+.overstap {
+  position: relative;
+  left: -163px;
+  top: 266px;
 }
 
-body.expand dd {
-  font-size: 1.75em;
+.hockey {
+  position: relative;
+  right: -163px;
+  top: 255px;
 }
 
-body.expand img {
-  width:15em;
+.slaging {
+  position: relative;
+  left: -163px;
+  top: 130px;
+}
+
+.opleiding {
+  position: relative;
+  bottom: 4px;
 }
