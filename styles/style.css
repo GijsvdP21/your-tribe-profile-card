@@ -35,7 +35,7 @@ article {
   border-radius:1rem;
   position: relative;
   transition:.25s;
-  height: 35em;
+  height: 450px;
 }
 
 header {
@@ -50,61 +50,38 @@ header {
 h1 {
   margin:1.1rem 0 1rem;
   color: rgb(255, 153, 0);
+  font-size: 35px;
   font-weight: 1000;
-  text-decoration: underline;
   transition: .5s;
   position: absolute;
-  top: 0em;
 }
 
-h1:hover {
-  transform: rotate(360deg);
+.Gijs {
+  top: .1em;
+  left: .1em;
+  rotate: -45deg;
+  text-decoration: underline;
 }
 
-.Baby {
-  width:10em;
-  border-radius:1em;
-  border: 3px solid gold;
-  box-shadow:0 0 2px 2px rgba(0,0,0,.2);
-  position:relative;
-  top: 500px;
-  transition:.25s .15s;
+.van {
+  top: .1em;
+  right: .1em;
+  rotate: 45deg;
+  text-decoration: underline;
 }
 
-.Geslaagd {
-  
-  width:6em;
-  border-radius:1em;
-  border:3px solid gold;
-  box-shadow:0 0 2px 2px rgba(0,0,0,.2);
-  position: relative;
-  bottom: -140px;
-  transition:.25s .15s;
-  left: -162.5px;
+.de {
+  bottom: .4em;
+  left: .45em;
+  rotate: 45deg;
+  text-decoration: underline;
 }
 
-.Pasfoto {
-  width:6em;
-  border-radius:1em;
-  border:3px solid gold;
-  box-shadow:0 0 2px 2px rgba(0,0,0,.2);
-  position:relative;
-  top: -2px;
-  transition:.25s .15s;
-}
-
-.nk {
-  width:10em;
-  border-radius:1em;
-  border:3px solid gold;
-  box-shadow:0 0 2px 2px rgba(0,0,0,.2);
-  position:relative;
-  top:10rem;
-  transition:.25s .15s;
-}
-
-img {
-  padding: 1px solid gold;
+.Putte {
+  bottom: .3em;
+  right: .3em;
+  rotate: -45deg;
+  text-decoration: underline;
 }
 
 dl {
@@ -155,42 +132,27 @@ article > p {
   width:125px;
 }
 
-.geboorte {
+.res-circle {
+  width: 100%;
+  border-radius: 50%;
+  background: orange;
+  line-height: 0;
   position: relative;
-  top: 303px;
+  transition: 6s;
 }
 
-.basisschool {
-  position: relative;
-  left: -163px;
-  top: 288px;
+.res-circle::after {
+  content:"";
+  display: block;
+  padding-bottom: 100%;
 }
 
-.verhuizing {
-  position: relative;
-  right: -163px;
-  top: 277px;
+.res-circle:hover {
+  transform: rotate(360deg);
 }
 
-.overstap {
-  position: relative;
-  left: -163px;
-  top: 266px;
-}
-
-.hockey {
-  position: relative;
-  right: -163px;
-  top: 255px;
-}
-
-.slaging {
-  position: relative;
-  left: -163px;
-  top: 130px;
-}
-
-.opleiding {
-  position: relative;
-  bottom: 4px;
+img {
+  position: absolute;
+  width: 80px;
+  border-radius: 50%;
 }
