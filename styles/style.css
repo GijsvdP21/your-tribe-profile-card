@@ -71,7 +71,6 @@ h1:hover {
 }
 
 .Geslaagd {
-  
   width:6em;
   border-radius:1em;
   border:3px solid gold;
@@ -83,13 +82,15 @@ h1:hover {
 }
 
 .Pasfoto {
-  width:6em;
-  border-radius:1em;
-  border:3px solid gold;
-  box-shadow:0 0 2px 2px rgba(0,0,0,.2);
-  position:relative;
-  top: -2px;
-  transition:.25s .15s;
+  width: 7em;
+  border-radius: 1em;
+  border: 3px solid gold;
+  box-shadow: 0 0 2px 2px rgba(0,0,0,.2);
+  position: relative;
+  top: -32px;
+  transition: .25s .15s;
+  left: 152px;
+  margin-bottom: 0px;
 }
 
 .nk {
@@ -191,5 +192,5 @@ article > p {
 
 .opleiding {
   position: relative;
-  bottom: 4px;
+  bottom: 0px;
 }
